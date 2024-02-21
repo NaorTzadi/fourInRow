@@ -6,7 +6,6 @@
   height: 40vmin;
   pointer-events: none;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,7 +13,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,10 +22,49 @@
   color: white;
 }
 
+.gameTitle {
+  text-align: center;
+  font-size: 36px;
+  text-decoration: underline;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+  font-style: italic;
+  cursor: pointer; /* Add pointer cursor to indicate it's clickable */
+  color: #007bff; /* Change default color to a link color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+.audio-button {
+  position: absolute;
+  top: 20px;
+  left: 20px; /* Adjust the left position to move it to the top left corner */
+  width: 40px; /* Set the width */
+  height: 40px; /* Set the height */
+  font-size: 20px; /* Increase the text size */
+  /* Add other styles for the audio button as needed */
+}
+.theme-button{
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+.App.dark .App-header {
+  background-color: #282c34;
+}
+.App.light .App-header {
+  background-color: #f5f5f5; /* Light gray or any other off-white color */
+}
+.gameTitle:hover {
+  color: #0056b3;
+}
 .App-link {
   color: #61dafb;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

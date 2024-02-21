@@ -1,0 +1,105 @@
+.game-lobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 60px);
+    padding: 10px;
+}
+
+.info-frames-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 260%;
+    max-width: 1200px;
+}
+
+.info-frame {
+    background-color: #ffd700;
+    border: 2px solid #ff69b4;
+    padding: 60px;
+    width: calc(33.33% - 20px);
+    text-align: center;
+    max-width: 400px;
+    height: 500px;
+    margin-right: 20px;
+    border-radius: 20px;
+    perspective: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s;
+
+}
+.info-frame:hover {
+    transform: scale(1.06);
+}
+.lobby-frame-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Comic Sans MS', cursive;
+    color: #006400;
+    text-align: center;
+}
+
+.back {
+    transform: rotateY(180deg);
+    font-size: 18px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 10px 40px 40px;
+}
+
+.info-frame:hover .lobby-frame-container {
+    transform: rotateY(180deg);
+}
+
+.info-frame h2 {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 36px;
+    color: #ff69b4;
+    margin-bottom: 20px;
+}
+
+.info-frame p {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 24px;
+    color: #006400;
+    line-height: 1.5;
+}
+
+.start-game-button {
+    background-color: #0065f3;
+    color: white;
+    padding: 40px 0;
+    border: none;
+    cursor: pointer;
+    width: calc(240% + 25% - 40px);
+    max-width: 400%;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    transition: transform 0.3s, border-radius 0.3s;
+    font-size: 24px;
+}
+
+.start-game-button:hover {
+    transform: scale(1.05);
+    border-radius: 25px;
+}

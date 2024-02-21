@@ -1,0 +1,97 @@
+.players-setup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    font-family: 'Comic Sans MS', cursive;
+    color: #006400;
+    width: 100%;
+    max-width: 1200px;
+}
+.game-setup-title{
+    border-bottom: 4px solid #006400;
+    margin-bottom: 20px;
+}
+.setup-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.frame-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ff69b4;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.setup-label {
+    font-size: 20px;
+    margin-bottom: 1px;
+    color: #ff69b4;
+    width: 100%;
+    text-align: left;
+}
+
+input[type="text"], input[type="number"], input[type="color"] {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 2px;
+    border-radius: 8px;
+    border: 2px solid #ff69b4;
+    font-size: 16px;
+}
+
+input[type="color"] {
+    height: 32px;
+    padding: 0;
+}
+
+.color-error-message, .name-error-message {
+    color: red;
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+.computer-button {
+    margin-bottom: 5px;
+    font-size: 16px;
+    padding: 8px 16px;
+    background-color: #ff69b4;
+    color: white;
+    border: 2px solid #ff69b4;
+    border-radius: 8px;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+    align-self: center;
+}
+
+.computer-button:hover {
+    background-color: #ff0080;
+    border-color: #ff0080;
+}
+
+.setup-start-button {
+    width: 400px;
+
+    background-color: #0065f3;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 20px;
+    border: 2px solid black;
+    margin-top: 2px;
+    transition: background-color 0.3s, border 0.3s;
+    align-self: center;
+}
+
+.setup-start-button:hover {
+    background-color: #0047ab;
+    border: 3px dashed blue;
+}
